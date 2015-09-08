@@ -1,9 +1,9 @@
 require 'fun_with_strings'
 #require 'debugger'
 
-describe 'palindrome detection', :pending => true do
+describe 'palindrome detection' do
   it 'should work for simple strings [10 points]' do
-    expec('redivider').to be_palindrome
+    expect('redivider').to be_palindrome
     expect('abracadabra').not_to be_palindrome
   end
   it 'should be case-insensitive [10 points]' do
