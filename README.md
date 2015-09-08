@@ -75,7 +75,7 @@ in the book, and the [Rubular](http://www.rubular.com) website
 lets you try out Ruby
 regular expressions "live". Some methods that you might find useful
 (which you'll have to look up in the [Ruby
-documentation](http://ruby-doc.org)) include
+documentation](http://ruby-doc.org/core-2.2.0)) include
 `String#downcase`, `String#gsub`, and `String#reverse`.
 
 The spec file contains a number of test cases.  At a minimum, all should
