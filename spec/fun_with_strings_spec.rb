@@ -15,7 +15,7 @@ describe 'palindrome detection' do
   end    
 end
 
-describe 'word count', :pending => true do
+describe 'word count' do
   it 'should return a hash [5 points]' do
     expect('now is the time'.count_words).to be_a_kind_of(Hash)
   end
@@ -23,8 +23,8 @@ describe 'word count', :pending => true do
     expect('Doo bee doo bee doo'.count_words).to eq({'doo' => 3, 'bee' => 2})
   end
   it 'ignores punctuation [5 points]' do
-    expect('A man, a plan, a canal -- Panama!'.count_words).to eq(
-      {'man' => 1, 'plan' => 1, 'canal' => 1, 'a' => 3, 'panama' => 1})
+    expect('A man, a plan, a canal -- Panama!'.count_words).to ==
+      {'man' => 1, 'plan' => 1, 'canal' => 1, 'a' => 3, 'panama' => 1}
   end
   it 'works on the empty string [10 points]' do
     expect(''.count_words).to eq({})
