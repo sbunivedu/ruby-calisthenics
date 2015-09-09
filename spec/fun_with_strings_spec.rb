@@ -20,20 +20,20 @@ describe 'word count', :pending => true do
     expect('now is the time'.count_words).to be_a_kind_of(Hash)
   end
   it 'works on simple strings [10 points]' do
-    expect('Doo bee doo bee doo'.count_words).to eq({'doo' => 3, 'bee' => 2})
+    expect('Doo bee doo bee doo'.count_words).to be == {'doo' => 3, 'bee' => 2}
   end
   it 'ignores punctuation [5 points]' do
     expect('A man, a plan, a canal -- Panama!'.count_words).to be ==
       {'man' => 1, 'plan' => 1, 'canal' => 1, 'a' => 3, 'panama' => 1}
   end
   it 'works on the empty string [10 points]' do
-    expect(''.count_words).to eq({})
+    expect(''.count_words).to be == {}
   end
   it 'ignores leading whitespace [10 points]' do
-    expect("  toucan".count_words).to eq({'toucan' => 1 })
+    expect("  toucan".count_words).to be == {'toucan' => 1 }
   end
   it 'ignores embedded whitespace [10 points]' do
-    expect("four   four  \n four \t four!").to eq({'four' => 4})
+    expect("four   four  \n four \t four!".count_words).to be == {'four' => 4}
   end
 end
 
