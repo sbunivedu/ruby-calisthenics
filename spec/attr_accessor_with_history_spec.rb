@@ -1,5 +1,5 @@
 require 'attr_accessor_with_history'
-#require 'debugger'
+require 'byebug'
 
 class TestClass1
   attr_accessor_with_history :foo
