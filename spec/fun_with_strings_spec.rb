@@ -43,7 +43,7 @@ describe 'anagram grouping', :pending => true do
       expect(''.anagram_groups).to eq([])
     end
     it 'should return an array of arrays for nonempty string [5 points]' do
-      'x'.anagram_groups.each { |element| element.to be_a_kind_of(Array) }
+      'x'.anagram_groups.each { |element| expect(element).to be_a_kind_of(Array) }
     end
   end
   it 'for "scream cars for four scar creams" [10 points]' do
