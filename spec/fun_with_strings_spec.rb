@@ -12,10 +12,10 @@ describe 'palindrome detection' do
   it 'should ignore nonword characters [10 points]' do
     expect('A man, a plan, a canal -- Panama').to be_palindrome
     expect("Madam, I'm Adam!").to be_palindrome
-  end    
+  end
 end
 
-describe 'word count', :pending => true do
+describe 'word count' do
   it 'should return a hash [5 points]' do
     expect('now is the time'.count_words).to be_a_kind_of(Hash)
   end
@@ -37,13 +37,13 @@ describe 'word count', :pending => true do
   end
 end
 
-describe 'anagram grouping', :pending => true do
+describe 'anagram grouping' do
   describe 'sanity checks' do
     it 'should work on the empty string [5 points]' do
       expect(''.anagram_groups).to eq([])
     end
     it 'should return an array of arrays for nonempty string [5 points]' do
-      'x'.anagram_groups.each { |element| element.to be_a_kind_of(Array) }
+      'x'.anagram_groups.each { |element| expect(element).to be_a_kind_of(Array) }
     end
   end
   it 'for "scream cars for four scar creams" [10 points]' do
@@ -53,5 +53,5 @@ describe 'anagram grouping', :pending => true do
         expect(@anagrams).to include(group)
     end
   end
-    
+
 end
