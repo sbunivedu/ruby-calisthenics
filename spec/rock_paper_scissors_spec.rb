@@ -20,8 +20,8 @@ describe RockPaperScissors, :pending => true do
     end
   end
   it "should raise NoSuchStrategyError if strategy isn't R, P, or S [10 points]" do
-    #expect(RockPaperScissors.winner(@rock, ['Dave', 'w'])).to 
-      #raise_error(RockPaperScissors::NoSuchStrategyError, "Strategy must be one of R,P,S")
+    expect(lambda{RockPaperScissors.winner(@rock, ['Dave', 'w'])}).to raise_error(
+      RockPaperScissors::NoSuchStrategyError, "Strategy must be one of R,P,S")
   end
   describe 'tournament' do
     it 'base case [20 points]' do
