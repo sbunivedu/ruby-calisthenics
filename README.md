@@ -76,7 +76,7 @@ lets you try out Ruby
 regular expressions "live". Some methods that you might find useful
 (which you'll have to look up in the [Ruby
 documentation](http://ruby-doc.org/core-2.2.0)) include
-`String#downcase`, `String#gsub`, and `String#reverse`.
+[`String#downcase`](http://ruby-doc.org/core-2.2.0/String.html#method-i-downcase), [`String#gsub`](http://ruby-doc.org/core-2.2.0/String.html#method-i-gsub), and [`String#reverse`](http://ruby-doc.org/core-2.2.0/String.html#method-i-reverse).
 
 The spec file contains a number of test cases.  At a minimum, all should
 pass before you submit your code.  We may run additional cases as well.
